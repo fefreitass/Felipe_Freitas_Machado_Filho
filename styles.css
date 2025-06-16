@@ -266,12 +266,17 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre .btn-social button{
+    all: unset;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
     background-color: #254b26c2;
     font-size: 25px;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
