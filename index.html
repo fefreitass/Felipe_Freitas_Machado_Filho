@@ -11,8 +11,9 @@
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- FIM BOOTSTRAP ICONS -->
-    <title>Felipe Freitas</title>
+    <title>Felipe Freitas Machado Filho</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,19 +26,40 @@
 
             <nav class="main-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialdades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
 
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contatos">
                     <button>Contato</button>
                 </a>
             </div><!-- btn-contato -->
+
+            <div class="btn-menu-mobile" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div> <!-- btn-menu-mobile -->
+
+
+            <div class="menu-mobile" id="menu-mobile"> <!-- menu-mobile -->
+                <div class="btn-fechar"> <!-- btn-fechar -->
+                    <i class="bi bi-x-square-fill"></i>
+                </div> <!-- btn-fechar -->
+                <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+
+            </nav>
+            </div> <!-- menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!-- interface-->
     </header>
 
@@ -47,14 +69,16 @@
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>Minha História<span>.</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                            cupidatat non proident, sunt in culpa qui officia deserunt 
-                            mollit anim id est laborum</p>
+                        <p>Sou Felipe Freitas, estudante de Ciência da Computação na PUCPR. 
+                            Sempre fui fascinado por tecnologia, jogos e história.
+                            Meu interesse pelo mundo digital começou ainda na infância, 
+                            quando fui apresentado aos jogos. Tenho experiência com linguagens como HTML, CSS, Python, Java e JavaScript,
+                             e venho desenvolvendo projetos que unem estética, funcionalidade e boas práticas. 
+                             Esse site é um espaço onde compartilho um 
+                            pouco da minha trajetória, 
+                            unindo o que eu gosto com o que estou aprendendo. 
+
+                        </p>
 
                             <div class="btn-contato">
                                 <a href="#">
@@ -78,21 +102,21 @@
                         <div class="especialidades-box">
                             <i class="bi bi-linkedin"></i>
                             <h3>Linkedln</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>QUER CONHECER MEU TRABALHO E EXPERIÊNCIA? ME ENCONTRA NO LINKEDIN!</p>
                         </div> <!-- especialidades-box -->
                     </a>
                     <a href="https://github.com/fefreitass" target="_blank" class="link-box">
                         <div class="especialidades-box">
                             <i class="bi bi-github"></i>
                             <h3>GitHub</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>QUER VER MEUS PROJETOS? DÁ UMA OLHADA NO MEU GITHUB!</p>
                         </div> <!-- especialidades-box -->
                     </a>
                     <a href="https://www.instagram.com/fefreitass__/" target="_blank" class="link-box">
                         <div class="especialidades-box">
                             <i class="bi bi-instagram"></i>
                             <h3>Instagram</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>QUER ACOMPANHAR MEU DIA A DIA? ME SEGUE NO INSTAGRAM!</p>
                         </div> <!-- especialidades-box -->
                     </a>
                 </div> <!-- flex -->
@@ -106,15 +130,21 @@
                         <img src="./images/vader.jpeg" alt="">
                     </div> <!-- img-sobre -->
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <SPAN>SOU FELIPE FREITAS</SPAN></h2>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat.</P>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat.</P>
+                        <h2>MUITO PRAZER, <SPAN>SOU FELIPE FREITAS.</SPAN></h2>
+                        <P>Sou Felipe Freitas Machado Filho — ou só Felipe Freitas — estudante de Ciência da Computação 
+                        na PUCPR. Meu interesse pelo mundo digital começou ainda na infância, quando fui apresentado 
+                        aos jogos. Títulos como CS 1.6, Call of Duty: Black Ops II e God of War marcaram essa fase
+                         e despertaram minha curiosidade sobre o que acontecia por trás da tela. Com o tempo, fui 
+                         me envolvendo cada vez mais com mundos complexos e bem construídos, como os de The Witcher 3
+                          e Red Dead Redemption 2, e me encantei pela forma como tecnologia e criatividade podem 
+                          andar juntas.
+                        </P>
+                        <P>Hoje, além de estudar a fundo os conceitos da computação, também aplico esse 
+                            conhecimento na prática. Tenho experiência com linguagens como HTML, CSS, Python,
+                             Java e JavaScript, e venho desenvolvendo projetos que unem estética, 
+                             funcionalidade e boas práticas. Gosto de aprender coisas novas, testar ideias e 
+                             transformar códigos em soluções reais. A tecnologia, pra mim, é mais do que uma 
+                             ferramenta: é uma forma de criar, evoluir e expressar o que eu acredito.</P>
                             <div class="btn-social">
                                 <a href="https://www.youtube.com/@Fritass03" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
                                 <a href="https://www.instagram.com/fefreitass__/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
@@ -146,7 +176,6 @@
                     </div>
                 </div>
             </div> <!-- interface -->
-        </section> <!-- portifolio -->
     </main>
 </body>
 </html>
