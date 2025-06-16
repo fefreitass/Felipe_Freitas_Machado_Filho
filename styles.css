@@ -1,5 +1,10 @@
 
 /* ESTILO GERAL */
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -234,6 +239,7 @@ section.Especialidades .flex{
     background-color: transparent;
 }
 
+
 /* ESTILO DO SOBRE */
 
 section.sobre{
@@ -376,7 +382,7 @@ a{
     /* CABECALHO */
 
     .interface .logo img{
-        margin-left:25%;
+        margin-left:8%
     }
     .main-desktop,.btn-contato{
         display: none;
