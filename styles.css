@@ -408,7 +408,9 @@ a{
     }
     .btn-social{
         text-align: center;
-        color: #000;
+        color: white;
+        background-color: #000 !important;
+        border: none;
     }
 
     /* PROJETOS */
